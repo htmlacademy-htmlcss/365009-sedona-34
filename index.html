@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона главная</title>
   </head>
   <body>
     <header class="page-header">
@@ -12,13 +12,13 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Гостиницы</a>
+            <a href="catalog.html" class="navigation-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list">
@@ -32,8 +32,8 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <a href="#" class="button">Хочу сюда!</a>
         </ul>
+        <a href="#" class="button">Хочу сюда!</a>
       </nav>
     </header>
     <main class="main-index">
@@ -45,37 +45,27 @@
       </p>
       <section class="advantages">
         <h2 class="visssualy-hidden">Причины посетить Седону</h2>
-        <p class="advantages-reasons section-description">
-          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-        </p>
+        <p class="advantages-reasons section-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ol class="advantages-list">
           <li class="advantages-item advantage-detail">
             <div class="advantage-item-wrapper">
               <h3 class="advantage-title">Настоящий городок</h3>
               <span class="advantage-number">-№1-</span>
-              <p class="advantage-description">
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
+              <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img class="advantage-picture" src="#" alt="Дома на фоне гор">
             <ul class="advantages-list">
               <li class="advantages-item">
                 <h4 class="advantage-title advantage-title-image">Жильё</h4>
-                <p class="advantege-description">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                </p>
+                <p class="advantege-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="advantages-item">
                 <h4 class="advantage-title advantage-title-image">Еда</h4>
-                <p class="advantege-description">
-                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-                </p>
+                <p class="advantege-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advantages-item">
                 <h4 class="advantage-title advantage-title-image">Сувениры</h4>
-                <p class="advantege-description">
-                  Не только китайского, но и настоящего местного производства!
-                </p>
+                <p class="advantege-description">Не только китайского, но и настоящего местного производства!</p>
               </li>
             </ul>
           </li>
@@ -91,37 +81,33 @@
             <h3 class="advantage-title">Небольшая площадь</h3>
             <span class="advantage-number">-№3-</span>
             <p class="advantage-description">Все достопримечательности находятся очень близко</p>
-          </li>  
+          </li>
           <li class="advantages-item">
             <h3 class="advantage-title">Красивая дорога</h3>
             <span class="advantage-number">-№4-</span>
             <p class="advantage-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>  
+          </li>
           <li class="advantages-item">
             <h3 class="advantage-title">Мало туристов</h3>
             <span class="advantage-number">-№5-</span>
             <p class="advantage-description">Большинство едет в Гранд Каньон и толпится там</p>
-          </li>    
+          </li>
         </ol>
       </section>
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p class="section-slogan">
+        <p class="hotel-search-slogan section-slogan">
           <b>Заинтересовались?</b>
         </p>
-        <p class="section-description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
+        <p class="hotel-search-description section-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="newsletter">
         <h2 class="visually-hidden">Новостная рассылка</h2>
-        <p class="section-slogan">
+        <p class="newsletter-slogan section-slogan">
           <b>Подпишитесь на рассылку</b>
         </p>
-        <p class="section-description">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
+        <p class="newsletter-description section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
           <input class="newsletter-email" type="email" name="newsletter-email" placeholder="Ваш e-mail" aria-label="Введите ваш e-mail">
           <button class="button" type="submit">Подписаться</button>
@@ -150,10 +136,9 @@
         </ul>
       </section>
       <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/">
+      <a class="footer-logo-link" href="https://htmlacademy.ru/">
         <img class="footer-academy-logo" src="#" alt="Логотип HTML Academy">
       </a>
     </footer>
-
   </body>
 </html>

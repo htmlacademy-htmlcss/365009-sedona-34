@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона каталог</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a>
+        <img class="header-logo" src="#" alt="Логотип гостиницы Седоны">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="index.html" class="navigation-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <a href="#" class="button">Хочу сюда!</a>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Каталог</a>
+          </li>
+        </ul>
+      </header>
+      <section class="catalog-housing">
+        <h2 class="visssualy-hidden">Выбор гостиницы с фильтрами</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструтура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input class="control-checkbox" type="checkbox" name="pool" id="pool" checked>
+                <label class="checkbox-name" for="pool">Бассейн</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-checkbox" type="checkbox" name="parking" id="parking" checked>
+                <label class="checkbox-name" for="parking">Парковка</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-checkbox" type="checkbox" name="wifi" id="wifi">
+                <label  class="checkbox-name" for="wifi">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип Жилья</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input class="control-radio" type="radio" name="housing-type" value="hotel" id="hotel" checked>
+                <label class="radio-name" for="hotel">Гостиница</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-radio" type="radio" name="housing-type" value="motel" id="motel">
+                <label class="radio-name" for="motel">Мотель</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input class="control-radio" type="radio" name="housing-type" value="apartaments" id="apartaments">
+                <label class="radio-name" for="apartaments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-price">
+            <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
+              <input class="price-input" type="number" name="min-price" value="0" placeholder="от" aria-label="минимальная стоимость">
+              <input class="price-input" type="number" name="max-price" value="9000" placeholder="до" aria-label="максимальная стоимость">
+              <div class="price-slider">
+                <div class="range">
+                  <div class="active-range">
+                    <div class="slider-circle left-circle"></div>
+                    <div class="slider-circle right-circle"></div>
+                  </div>
+                </div>
+              </div>
+          </fieldset>
+          <ul class="filter-control-list">
+            <li class="filter-control-item">
+              <input class="button" type="submit" value="Применить" aria-label="Применить фильтры">
+            </li>
+            <li class="filter-control-item">
+              <input class="button button-filter-reset" type="reset" value="Сбросить" aria-label="Сбросить фильтры">
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
