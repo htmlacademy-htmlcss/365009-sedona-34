@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a>
+      <a class="header-logo-link">
         <img class="header-logo" src="#" alt="Логотип гостиницы Седоны">
       </a>
       <nav class="navigation">
@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
       </header>
@@ -102,10 +102,10 @@
           </fieldset>
           <ul class="filter-control-list">
             <li class="filter-control-item">
-              <input class="button" type="submit" value="Применить" aria-label="Применить фильтры">
+              <button class="button" type="submit">Применить</button>
             </li>
             <li class="filter-control-item">
-              <input class="button button-filter-reset" type="reset" value="Сбросить" aria-label="Сбросить фильтры">
+              <button class="button button-filter-reset" type="reset">Сбросить</button>
             </li>
           </ul>
         </form>
@@ -114,7 +114,7 @@
             <p class="search-result title">
               Найдено гостиниц: <span class="result-number">38</span>
             </p>
-            <select class="product-sort">
+            <select class="product-sort" aria-label="Сортировка гостиниц по категориям">
               <option value="cheap" selected>Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
@@ -227,7 +227,7 @@
               <a class="catalog-pagination-link" href="#">4</a>
             </li>
             <li class="catalog-pagination-item">
-              <button class="catalog-pagination-link">...</button>
+              <a class="catalog-pagination-link">...</a>
             </li>
             <li class="catalog-pagination-item">
               <a class="catalog-pagination-link" href="#">10</a>
@@ -235,7 +235,7 @@
           </ul>
           <div class="hotels-number-wrapper">
             <p class="hotels-number">Гостиниц на странице:</p>
-            <select class="page-number-cards">
+            <select class="page-number-cards" aria-label="Количество гостиниц на странице">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -248,9 +248,7 @@
       </section>
       <section class="newsletter">
         <h2 class="visually-hidden">Новостная рассылка</h2>
-        <p class="newsletter-slogan title">
-          <b>Подпишитесь на рассылку</b>
-        </p>
+        <p class="newsletter-slogan title">Подпишитесь на рассылку</p>
         <p class="newsletter-description section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
           <input class="newsletter-email" type="email" name="newsletter-email" placeholder="Ваш e-mail" aria-label="Введите ваш e-mail">
@@ -263,17 +261,17 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="button social-vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://t.me/htmlacademy ">
+            <a class="button social-telegram" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="button social-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
