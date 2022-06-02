@@ -91,8 +91,10 @@
             </fieldset>
             <fieldset class="catalog-filter-price">
               <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
-                <input class="price-input" type="number" name="min-price" value="0" placeholder="от" aria-label="минимальная стоимость">
-                <input class="price-input" type="number" name="max-price" value="9000" placeholder="до" aria-label="максимальная стоимость">
+                <label class="visually-hidden" for="min-price">Стоимость от</label>
+                <input class="price-input" type="number" name="min-price" value="0" placeholder="от" id="min-price">
+                <label class="visually-hidden" for="max-price">Стоимость до</label>
+                <input class="price-input" type="number" name="max-price" value="9000" placeholder="до" id="max-price">
                 <div class="price-slider">
                   <div class="range">
                     <div class="active-range">
@@ -104,7 +106,7 @@
             </fieldset>
             <ul class="filter-control-list">
               <li class="filter-control-item">
-                <button class="button button-blue" type="submit">Применить</button>
+                <button class="button button-second" type="submit">Применить</button>
               </li>
               <li class="filter-control-item">
                 <button class="button button-filter-reset" type="reset">Сбросить</button>
@@ -124,13 +126,13 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
           <div class="circuit-buttons">
-            <a href="#" class="button button-dark">
+            <a href="#" class="circuit-button circuit-border">
               <span class="visually-hidden">Показать плиткой</span>
             </a>
-            <a class="button" href="#">
+            <a class="circuit-button" href="#">
               <span class="visually-hidden">Показать слайдер</span>
             </a>
-            <a class="button" href="#">
+            <a class="circuit-button" href="#">
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -144,7 +146,7 @@
             <span class="housing-type">Гостиница</span>
             <span class="housing-price">От 4000 &#8381;</span>
             <a class="button" href="#">Подробнее</a>
-            <button class="button button-blue">В избранное</button>
+            <button class="button button-second">В избранное</button>
             <div class="rating-wrapper">
               <ul class="rating-stars">
                 <li class="rating-star"><!--pseudo--></li>
@@ -165,7 +167,7 @@
             <span class="housing-type">Гостиница</span>
             <span class="housing-price">От 5000 &#8381;</span>
             <a class="button" href="#">Подробнее</a>
-            <button class="button button-green">В избранном</button>
+            <button class="button button-current">В избранном</button>
             <div class="rating-wrapper">
               <ul class="rating-stars">
                 <li class="rating-star"><!--pseudo--></li>
@@ -186,7 +188,7 @@
             <span class="housing-type">Гостиница</span>
             <span class="housing-price">От 2500 &#8381;</span>
             <a class="button" href="#">Подробнее</a>
-            <button class="button button-blue">В избранное</button>
+            <button class="button button-second">В избранное</button>
             <div class="rating-wrapper">
               <ul class="rating-stars">
                 <li class="rating-star"><!--pseudo--></li>
@@ -206,7 +208,7 @@
             <span class="housing-type">Гостиница</span>
             <span class="housing-price">От 1500 &#8381;</span>
             <a class="button" href="#">Подробнее</a>
-            <button class="button button-blue">В избранное</button>
+            <button class="button button-second">В избранное</button>
             <div class="rating-wrapper">
               <ul class="rating-stars">
                 <li class="rating-star"><!--pseudo--></li>
@@ -255,8 +257,9 @@
         <p class="newsletter-slogan title">Подпишитесь на рассылку</p>
         <p class="newsletter-description section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="newsletter-input" type="email" name="newsletter-email" placeholder="Ваш e-mail" aria-label="Введите ваш e-mail">
-          <button class="button button-blue button-big" type="submit">Подписаться</button>
+          <label class="visually-hidden" for="email">Введите ваш e-mail</label>
+          <input class="newsletter-input" type="email" name="newsletter-email" placeholder="Ваш e-mail" id="email">
+          <button class="button button-second button-big" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

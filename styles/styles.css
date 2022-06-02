@@ -46,11 +46,11 @@ body {
   border: none;
 }
 
-.button-blue {
+.button-second {
   background-color: #82B3D3;
 }
 
-.button-green {
+.button-current {
   background-color: #7DB54F;
 }
 
@@ -73,7 +73,7 @@ body {
 /* main */
 
 .main-logo-wrapper {
-  background-color: #756157;
+  background-color: #924709;
   background-image: url("../images/main-page-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
