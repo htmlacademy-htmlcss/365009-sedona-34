@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -31,7 +31,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 .site-background {
   background-color: #f2f2f2;
@@ -56,6 +56,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -140,6 +141,11 @@ body {
   text-align: center;
 }
 
+.main-logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .title {
   color: #000000;
   font-size: 30px;
@@ -147,14 +153,30 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
-
-/* advantages */
 
 .section-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+}
+
+.welcome-slogan {
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 63px;
+  padding-bottom: 16px;
+}
+
+/* advantages */
+
+.advantages-reasons {
+  width: 720px;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 90px;
 }
 
 .advantages-list {
@@ -210,12 +232,29 @@ body {
 
 /* hotel-search */
 
+.hotel-search {
+  text-align: center;
+  padding-top: 91px;
+  padding-bottom: 93px;
+  padding-left: 94px;
+  padding-right: 94px;
+}
 
+.hotel-search-slogan {
+  width: 365px;
+  margin: 0 auto;
+}
+
+.hotel-search-description {
+  width: 592px;
+  margin: 0 auto;
+}
 
 /* newsletter */
 
 .newsletter {
   text-align: center;
+  padding: 94px;
 }
 
 .newsletter-main {
@@ -230,6 +269,16 @@ body {
   color: #ffffff;
 }
 
+.newsletter-slogan {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-description {
+  width: 500px;
+  margin: 0 auto;
+}
+
 .newsletter-input {
   background-color: #f2f2f2;
   border: none;
@@ -237,6 +286,13 @@ body {
 
 
 /* footer */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
 
 .contact-phone {
   text-decoration: none;
