@@ -55,7 +55,7 @@
         <section class="catalog-filter">
           <h2 class="visually-hidden">Выбор отеля с фильтрами</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group filter-options">
               <legend class="catalog-filter-title">Инфраструтура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -72,7 +72,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group filter-housing-type">
               <legend class="catalog-filter-title">Тип Жилья</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -89,7 +89,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-price">
+            <fieldset class="catalog-filter-group filter-price">
               <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
                 <label class="visually-hidden" for="min-price">Стоимость от</label>
                 <input class="price-input" type="number" name="min-price" value="0" placeholder="от" id="min-price">
@@ -121,7 +121,7 @@
           <p class="search-result title">
             Найдено гостиниц: <span class="result-number">38</span>
           </p>
-          <select class="hotels-sort sorting" aria-label="Сортировка гостиниц по категориям">
+          <select class="hotels-sorting sorting" aria-label="Сортировка гостиниц по категориям">
             <option value="cheap" selected>Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
@@ -220,36 +220,38 @@
             </div>
           </li>
         </ul>
-        <ul class="catalog-pagination">
-          <li class="catalog-pagination-item">
-            <a class="pagination-link pagination-link-current" href="#">1</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="pagination-link">...</a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-        <div class="hotels-number-wrapper">
-          <p class="hotels-number">Гостиниц на странице:</p>
-          <select class="page-number-cards sorting" aria-label="Количество гостиниц на странице">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4" selected>4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select>
+        <div class="pagination-wrapper">
+          <ul class="catalog-pagination">
+            <li class="catalog-pagination-item">
+              <a class="pagination-link pagination-link-current" href="#">1</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="pagination-link">...</a>
+            </li>
+            <li class="catalog-pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+          <div class="hotels-number-wrapper">
+            <p class="hotels-number">Гостиниц на странице:</p>
+            <select class="page-number-cards sorting" aria-label="Количество гостиниц на странице">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
         </div>
       </section>
       <section class="newsletter">
