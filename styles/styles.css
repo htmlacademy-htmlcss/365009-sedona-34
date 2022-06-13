@@ -415,16 +415,21 @@ body {
 
 /* catalog-hotels */
 
+.catalog-hotels {
+  width: 1056px;
+  margin: 0 auto;
+}
+
 .sort-wrapper {
   display: flex;
-  width: 1057px;
-  margin: 0 auto;
+  /* width: 1057px;
+  margin: 0 auto; */
 }
 
 .search-result {
   text-align: inherit;
   width: 370px;
-  margin-right: 159px;
+  margin-right: auto;
 }
 
 .sorting {
@@ -449,8 +454,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  width: 1056px;
-  margin: 0 auto;
+  /* width: 1056px;
+  margin: 0 auto; */
   padding: 0;
 }
 
@@ -462,6 +467,10 @@ body {
 
 .product-card-link {
   text-decoration: none;
+}
+
+.product-card-image {
+  display: block;
 }
 
 .product-card-title {
@@ -483,8 +492,8 @@ body {
 .pagination-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 1056px;
-  margin: 0 auto;
+  /* width: 1056px;
+  margin: 0 auto; */
 }
 
 .catalog-pagination {
