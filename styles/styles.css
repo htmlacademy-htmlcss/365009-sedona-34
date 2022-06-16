@@ -146,6 +146,7 @@ body {
 
 .button-navigation {
   align-self: center;
+  width: 160px;
   padding: 9px 30px;
 }
 
@@ -159,10 +160,10 @@ body {
   text-align: center;
   padding-top: 51px;
   padding-bottom: 82px;
-  margin-bottom: 43px;
+  margin-bottom: 63px;
   background-color: #924709;
   background-image: url("../images/main-page-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -191,21 +192,19 @@ body {
 .welcome-slogan {
   width: 750px;
   margin: 0 auto;
-  padding-top: 20px;
   margin-bottom: 11px;
 }
 
 /* advantages */
 
 .advantages {
-  margin-bottom: 71px;
+  margin-bottom: 90px;
 }
 
 .advantages-reasons {
   width: 720px;
   margin: 0 auto;
-  padding-top: 20px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .advantages-list {
@@ -288,7 +287,7 @@ body {
 
 .hotel-search {
   text-align: center;
-  padding: 20px;
+  margin-bottom: 93px;
 }
 
 .hotel-search-slogan {
@@ -306,20 +305,18 @@ body {
 .hotel-search-button {
   width: 574px;
   padding: 12px 24px;
-  margin-bottom: 73px;
 }
 
 /* newsletter */
 
 .newsletter {
   text-align: center;
-  padding: 94px 20px 94px 20px;
+  padding: 94px 0 94px 0;
 }
 
 .newsletter-form {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
   width: 800px;
 }
 
@@ -328,7 +325,7 @@ body {
   background-color: #756157;
   background-image: url("../images/newsletter-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .newsletter-main .title {
@@ -350,14 +347,17 @@ body {
 .newsletter-input {
   font-size: inherit;
   width: 600px;
+  height: 60px;
   padding: 20px;
   background-color: #f2f2f2;
   border: none;
+  border-radius: 10px 0 0 10px;
 }
 
 .newsletter-button {
-  min-width: 200px;
+  width: 200px;
   padding: 12px 15px 12px 15px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 /* footer */
@@ -365,12 +365,34 @@ body {
 .page-footer {
   display: flex;
   width: 1060px;
-  margin: 0 auto;
+  margin: 40px auto 30px;
 }
 
 .social-list {
-  width: 189px;
-  margin-right: 193px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 190px;
+  padding: 0;
+  margin: 0;
+  margin-right: 197px;
+  list-style-type: none;
+}
+
+.social-vkontakte {
+  padding: 13px 11px 13px 11px;
+}
+
+.social-telegram {
+  padding: 13px 14px 13px 14px;
+}
+
+.social-youtube {
+  padding: 13px 12px 13px 12px;
+}
+
+.social-link {
+  display: block;
 }
 
 .contact-phone {
@@ -379,7 +401,17 @@ body {
   line-height: 40px;
   text-align: center;
   text-decoration: none;
+  width: 340px;
   margin-right: auto;
+}
+
+.academy-logo-link {
+  width: 115px;
+  align-self: center;
+}
+
+.academy-logo {
+  display: block;
 }
 
 /*-------------------------------- catalog ---------------------------------*/
@@ -391,8 +423,9 @@ body {
   padding-right: 70px;
   background-image: url(../images/filter-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #756157;
+  margin-bottom: 62px;
 }
 
 /* inner-header */
@@ -403,13 +436,16 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-item {
@@ -424,6 +460,12 @@ body {
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;
+}
+
+.breadcrumbs-link-home {
+  width: 22px;
+  height: 22px;
+  background-color: tomato;
 }
 
 /* catalog-filter */
@@ -447,10 +489,22 @@ body {
   padding: 0;
 }
 
+.catalog-filter-title {
+  margin-bottom: 30px;
+}
+
 .catalog-filter-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.catalog-filter-item {
+  margin-bottom: 15px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .filter-options {
@@ -469,6 +523,9 @@ body {
 }
 
 .filter-control-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 160px;
   list-style-type: none;
   margin: 0;
@@ -483,6 +540,11 @@ body {
   font-weight: 400;
   text-transform: none;
   background-color: transparent;
+}
+
+.filter-control-list .button {
+  width: 160px;
+  padding: 14px 30px;
 }
 
 /* catalog-hotels */
