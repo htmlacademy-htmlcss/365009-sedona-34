@@ -368,7 +368,9 @@ body {
 .page-footer {
   display: flex;
   width: 1060px;
-  margin: 40px auto 30px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .social-list {
@@ -439,6 +441,10 @@ body {
 
 /* inner-header */
 
+.inner-header {
+  margin-bottom: 40px;
+}
+
 .inner-header-title {
   color: #ffffff;
   font-weight: 700;
@@ -454,7 +460,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
 }
 
 .breadcrumbs-item {
