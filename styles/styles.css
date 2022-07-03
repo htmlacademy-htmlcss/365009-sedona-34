@@ -82,7 +82,6 @@ body {
 .button:hover,
 .button:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .button:active{
@@ -347,7 +346,7 @@ body {
 
 .advantage-description {
   margin: 0;
-  width: 230px;
+  width: 235px;
 }
 
 .advantage-title-banner {
@@ -546,19 +545,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #83B3D3;
+  color: #83b3d3;
   width: 47px;
   min-height: 48px;
 }
 
 .social-link:hover,
 .social-link:focus {
-  color: #68A2CA;
-  outline: none;
+  color: #68a2Ca;
 }
 
 .social-link:active {
-  fill-opacity: 0.3;}
+  fill-opacity: 0.3;
+}
 
 .contact-phone {
   color: #000000;
@@ -573,7 +572,6 @@ body {
 .contact-phone:hover,
 .contact-phone:focus {
   color: #756157;
-  outline: none;
 }
 
 .contact-phone:active {
@@ -589,7 +587,6 @@ body {
 .academy-logo-link:hover,
 .academy-logo-link:focus {
   color: #756157;
-  outline: none;
 }
 
 .academy-logo-link:active {
@@ -676,10 +673,6 @@ body {
 
 .breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover {
   opacity: 0.6;
-}
-
-.breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus {
-  outline: none;
 }
 
 .breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
@@ -898,9 +891,19 @@ body {
   appearance: none;
 }
 
-.sorting:hover,
+.sorting:hover:not(:disabled),
 .sorting:focus {
-  border: 2px solid #68a2Ca;
+  outline: 2px solid #68a2Ca;
+  outline-offset: -2px;
+}
+
+.sorting:active {
+  outline: #000000;
+}
+
+.sorting:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 /* .sorting:active {
@@ -969,12 +972,12 @@ body {
 }
 
 .product-cards-list::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: -67px;
-    background-color: #e6e6e6;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -67px;
+  background-color: #e6e6e6;
 }
 
 .product-cards-item {
@@ -1068,10 +1071,6 @@ body {
   text-align: center;
   border-radius: 4px;
   padding: 12px;
-}
-
-.pagination-link-more {
-  cursor: pointer;
 }
 
 .pagination-link:hover:not(.pagination-link-current) {
