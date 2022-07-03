@@ -80,7 +80,7 @@ body {
 }
 
 .button:hover,
-.button:focus {
+.button:focus-visible {
   background-color: #615048;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .button-second:hover,
-.button-second:focus {
+.button-second:focus-visible {
   background-color: #68a2ca;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .button-current:hover,
-.button-current:focus {
+.button-current:focus-visible {
   background-color: #6c9e42;
 }
 
@@ -750,7 +750,7 @@ body {
   opacity: 0.6;
 }
 
-.control-checkbox:focus + .filter-checkbox-name::before {
+.control-checkbox:focus-visible + .filter-checkbox-name::before {
   outline: 3px solid #83B3D3;
   opacity: 0.6;
 }
@@ -773,7 +773,7 @@ body {
   opacity: 0.6;
 }
 
-.control-radio:focus + .filter-radio-name::before {
+.control-radio:focus-visible + .filter-radio-name::before {
   outline: 3px solid #83B3D3;
   opacity: 0.6;
 }
@@ -845,7 +845,7 @@ body {
   background-color: transparent;
 }
 
-.button-filter-reset:focus {
+.button-filter-reset:focus-visible {
   opacity: 1;
   outline: 3px solid #83B3D3;
   background-color: transparent;
@@ -937,7 +937,7 @@ body {
   border-color: #000000;
 }
 
-.circuit-button:focus {
+.circuit-button:focus-visible {
   border-color: #68a2Ca;
   outline: none;
 }
