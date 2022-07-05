@@ -101,18 +101,32 @@
             </fieldset>
             <fieldset class="catalog-filter-group filter-price">
               <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
-                <label class="visually-hidden" for="min-price">Стоимость от</label>
-                <input class="price-input" type="number" name="min-price" value="0" placeholder="от" id="min-price">
-                <label class="visually-hidden" for="max-price">Стоимость до</label>
-                <input class="price-input" type="number" name="max-price" value="9000" placeholder="до" id="max-price">
-                <div class="price-slider">
+                <div class="filter-price-range">
+                  <div class="range-wrapper-inputs">
+                    <label class="price-fork" for="min-price">
+                      <input class="price-input price-min" type="number" name="min-price" value="0">
+                      <span class="price-input-placeholder">от</span>
+                    </label>
+                    <label class="price-fork" for="max-price">
+                      <input class="price-input price-max" type="number" name="max-price" value="9000">
+                      <span class="price-input-placeholder">до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min"></button>
+                      <button class="range-toggle toggle-max"></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="price-slider">
                   <div class="range">
                     <div class="active-range">
                       <div class="slider-circle left-circle"></div>
                       <div class="slider-circle right-circle"></div>
                     </div>
                   </div>
-                </div>
+                </div> -->
             </fieldset>
             <ul class="filter-control-list">
               <li class="filter-control-item">

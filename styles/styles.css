@@ -475,6 +475,7 @@ body {
   width: 500px;
   margin: 0 auto;
   margin-bottom: 46px;
+  text-indent: 7px;
 }
 
 .newsletter-input {
@@ -806,6 +807,73 @@ body {
 .filter-price {
   width: 288px;
   margin-right: 72px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.price-fork {
+  position: relative;
+}
+
+.price-input {
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  color: #ffffff;
+  width: 144px;
+  height: 48px;
+  padding: 14px 40px 13px 19px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.price-min {
+  /* border-right: 1px solid #ffffff; */
+  border-radius: 4px 0 0 4px;
+  margin-right: -2px;
+}
+
+.price-max {
+  /* border-left: 1px solid #ffffff; */
+  border-radius: 0 4px 4px 0;
+}
+
+.price-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  z-index: 90;
+}
+
+.price-input:focus-visible {
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+  outline: 3px solid #81B3D2;
+  outline-offset: -5px;
+  z-index: 1;
+}
+
+/* .price-min:focus {
+  border-right: 2px solid #ffffff;
+}
+
+.price-max:focus {
+  border-left: 2px solid #ffffff;
+} */
+
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.price-input-placeholder {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.3);
+  line-height: 23px;
+  width: 17px;
+  height: 23px;
+  right: 16px;
+  top: -3px;
 }
 
 .filter-control-list {
