@@ -156,5 +156,34 @@
         </svg>
       </a>
     </footer>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть окно поиска гостиницы</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="title">Поиск гостиницы в Седоне</h2>
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="modal-label arrival-date" for="arrival-date">Дата Заезда:</label>
+            <input class="modal-input arrival-date-input" type="date" name="arrival-date" id="arrival-date">
+            <p class="invalid-date-message">Мы не можем отправить вас в прошлое</p>
+            <p class="valid-date-message">На эти даты есть свободные номера. Пока есть.</p>
+            <label class="modal-label departure-date" for="departure-date">Дата Выезда:</label>
+            <input class="modal-input departure-date-input" type="date" name="departure-date" id="departure-date">
+            <p class="invalid-date-message">Мы не можем отправить вас в прошлое</p>
+            <p class="valid-date-message">На эти даты есть свободные номера. Пока есть.</p>
+            <label class="modal-label number-of-adults" for="adults">Взрослые:</label>
+            <button class="button-number-input input-button-delete" type="button">-</button>
+            <input class="modal-input adults-input" type="number" name="adults" id="adults">
+            <button class="button-number-input input-button-add" type="button">+</button>
+            <label class="modal-label number-of-children" for="children">Дети:<span class="tooltip">!</span></label>
+            <button class="button-number-input input-button-delete" type="button">-</button>
+            <input class="modal-input children-input" type="number" name="children" id="children">
+            <button class="button-number-input input-button-add" type="button">+</button>
+            <button class="button button-second" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
