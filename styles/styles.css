@@ -478,29 +478,33 @@ body {
   text-indent: 7px;
 }
 
-.newsletter-input {
+.site-input {
   font-family: inherit;
   font-size: inherit;
+  line-height: inherit;
   color: rgba(0, 0, 0, 0.6);
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.newsletter-input {
   width: 600px;
   height: 60px;
   padding: 20px 22px;
-  background-color: #f2f2f2;
-  border: none;
+
   border-radius: 10px 0 0 10px;
 }
 
-.newsletter-input:hover {
+.site-input:hover {
   background-color: #e6e6e6;
 }
 
-.newsletter-input:focus {
+.site-input:focus {
   outline: 3px solid #82b3d3;
-  outline-offset: -3px;
   background-color: #e6e6e6;
 }
 
-.newsletter-input:not(:placeholder-shown) {
+.site-input:not(:placeholder-shown) {
   color: #000000;
   outline: 2px solid #000000;
   outline-offset: -2px;
@@ -508,7 +512,7 @@ body {
 
 }
 
-.newsletter-input::placeholder {
+.site-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1008,6 +1012,7 @@ body {
   height: 49px;
   padding: 0;
   padding: 10px 40px 10px 18px;
+  background-color: transparent;
   background-image: url(/images/catalog-images/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: right 17px center;
@@ -1016,14 +1021,14 @@ body {
   appearance: none;
 }
 
-/* .sorting:hover:not(:disabled),
+.sorting:hover,
 .sorting:focus {
-  outline: 2px solid #68a2ca;
-  outline-offset: -2px;
+  border: 2px solid #68a2ca;
+  outline: none;
 }
 
 .sorting:active {
-  outline: #000000;
+  border: 2px solid #3f5e72;
 }
 
 .sorting:disabled {
@@ -1031,22 +1036,9 @@ body {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting:active {
-  border: 2px solid #3f5e72;
-
-} */
-
 .hotels-sorting {
   width: 290px;
   margin-right: 77px;
-  outline: none;
-}
-
-.hotels-sorting:focus {
-  border-color: rgb(0, 255, 55);
-}
-.hotels-sorting:active {
-  border-color: red;
 }
 
 .circuit-buttons {
@@ -1250,7 +1242,6 @@ body {
 
 .modal {
   position: relative;
-
   width: 715px;
   margin: auto;
   padding: 70px;
@@ -1315,19 +1306,9 @@ body {
 .hotel-search-form {
   display: grid;
   width: 100%;
-  /* grid-template-areas:
-    "arrival-date arrival-date"
-    "departure-date departure-date"
-    "number-of-adults number-of-children"
-    "modal-button-submit modal-button-submit"; */
-  /* grid-template-columns: 288px 230px; */
   grid-template-columns: 155px 133px 153px 133px;
-  grid-template-rows:
-    50px
-    50px
-    50px
-    50px;
-    row-gap: 40px;
+  grid-auto-rows: minmax(50px, max-content);
+  row-gap: 40px;
 }
 
 .modal-label {
@@ -1337,45 +1318,66 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  align-self: center;
 }
-
+/*
 .arrival-date,
 .departure-date {
   grid-column: 1 / 2;
-}
+} */
 
-.number-of-adults {
+/* .number-of-adults {
   grid-column: 1 / 2;
 }
 
 .number-of-children {
   grid-column: 3 / 4;
+} */
+
+.number-of-children {
+  justify-self: center;
 }
 
 .modal-button-submit {
   grid-column: 1 / -1;
 }
 
-.modal-input-wrapper {
+.tenants-input-wrapper {
   position: relative;
-  display: flex;
-  /* flex-direction: column;
-  justify-content: stretch; */
-  width: 133px;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.date-input-wrapper {
+  position: relative;
+  grid-column: 2 / -1;
 }
 
 .modal-input {
-  color: #000000;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  /* padding: 15px 40px 14px 19px; */
+  font-weight: 700;
+  min-height: 50px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.modal-input[type="number"]::-webkit-outer-spin-button,
+.modal-input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .arrival-date-input,
 .departure-date-input {
-  grid-column: 2 / -1;
+  padding: 15px 40px 14px 19px;
 }
+
+.adults-input,
+.children-input {
+  padding: 15px 51px 14px 51px;
+  text-align: center;
+}
+
+
 
 /* .modal-input-wrapper:first-of-type {
   grid-column: 2 / 3;
@@ -1385,24 +1387,101 @@ body {
   grid-column: 4 / 5;
 } */
 
-.modal-input-error {
-  position: relative;
-}
-
 .modal-input-error::after {
   content: "Мы не можем отправить вас в прошлое";
   position: absolute;
-}
-
-.modal-input-success {
-  position: relative;
+  font-size: 16px;
+  line-height: 21px;
+  bottom: -37px;
+  left: 0;
+  color: #ff5757;
+  width: 420px;
+  height: 29px;
 }
 
 .modal-input-success::after {
   content: "На эти даты есть свободные номера. Пока есть.";
   position: absolute;
+  font-size: 16px;
+  line-height: 21px;
+  bottom: -37px;
+  left: 0;
+  color: #333333;
+  width: 420px;
+  height: 29px;
 }
 
-.button-number-input{
+/* -+ */
+
+.button-number-input {
   position: absolute;
+  border: none;
+  background-color: transparent;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.input-button-delete {
+  top: 16px;
+  left: 10px;
+}
+
+.input-button-delete::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  width: 13px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.input-button-add {
+  top: 16px;
+  right: 10px;
+}
+
+.input-button-add::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 3px;
+  width: 13px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.input-button-add::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  width: 1px;
+  height: 13px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button-number-input:hover.input-button-delete::before,
+.button-number-input:hover.input-button-add::before,
+.button-number-input:hover.input-button-add::after {
+  background-color: #000000;
+}
+
+.button-number-input:focus-visible {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.button-number-input:focus-visible.input-button-delete::before,
+.button-number-input:focus-visible.input-button-add::before,
+.button-number-input:focus-visible.input-button-add::after {
+  background-color: #000000;
+}
+
+.button-number-input:active.input-button-delete::before,
+.button-number-input:active.input-button-add::before,
+.button-number-input:active.input-button-add::after {
+  background-color: rgba(0, 0, 0, 0.2);
 }
