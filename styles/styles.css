@@ -1016,7 +1016,7 @@ body {
   appearance: none;
 }
 
-.sorting:hover:not(:disabled),
+/* .sorting:hover:not(:disabled),
 .sorting:focus {
   outline: 2px solid #68a2ca;
   outline-offset: -2px;
@@ -1031,13 +1031,22 @@ body {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-/* .sorting:active {
+.sorting:active {
   border: 2px solid #3f5e72;
+
 } */
 
 .hotels-sorting {
   width: 290px;
   margin-right: 77px;
+  outline: none;
+}
+
+.hotels-sorting:focus {
+  border-color: rgb(0, 255, 55);
+}
+.hotels-sorting:active {
+  border-color: red;
 }
 
 .circuit-buttons {
@@ -1226,11 +1235,12 @@ body {
 }
 
 /* modal */
+
 .modal-wrapper {
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
@@ -1240,6 +1250,7 @@ body {
 
 .modal {
   position: relative;
+
   width: 715px;
   margin: auto;
   padding: 70px;
@@ -1250,6 +1261,7 @@ body {
 
 .modal .title {
   text-align: left;
+  margin-bottom: 63px;
 }
 
 .modal-close-button {
@@ -1273,8 +1285,8 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-.modal-close-button:active.modal-close-button::before,
-.modal-close-button:active.modal-close-button::after {
+.modal-close-button:active::before,
+.modal-close-button:active::after {
   opacity: 0.3;
 }
 
@@ -1299,12 +1311,57 @@ body {
   background-color: #000000;
   transform: rotate(-45deg);
 }
+/*  */
+.hotel-search-form {
+  display: grid;
+  width: 100%;
+  /* grid-template-areas:
+    "arrival-date arrival-date"
+    "departure-date departure-date"
+    "number-of-adults number-of-children"
+    "modal-button-submit modal-button-submit"; */
+  /* grid-template-columns: 288px 230px; */
+  grid-template-columns: 155px 133px 153px 133px;
+  grid-template-rows:
+    50px
+    50px
+    50px
+    50px;
+    row-gap: 40px;
+}
 
 .modal-label {
+  /* display: flex; */
+  position: relative;
   color: #000000;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.arrival-date,
+.departure-date {
+  grid-column: 1 / 2;
+}
+
+.number-of-adults {
+  grid-column: 1 / 2;
+}
+
+.number-of-children {
+  grid-column: 3 / 4;
+}
+
+.modal-button-submit {
+  grid-column: 1 / -1;
+}
+
+.modal-input-wrapper {
+  position: relative;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: stretch; */
+  width: 133px;
 }
 
 .modal-input {
@@ -1312,8 +1369,40 @@ body {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  /* padding: 15px 40px 14px 19px; */
 }
 
-.modal-input::-webkit-calendar-picker-indicator {
-  opacity: 0;
+.arrival-date-input,
+.departure-date-input {
+  grid-column: 2 / -1;
+}
+
+/* .modal-input-wrapper:first-of-type {
+  grid-column: 2 / 3;
+}
+
+.modal-input-wrapper:last-of-type {
+  grid-column: 4 / 5;
+} */
+
+.modal-input-error {
+  position: relative;
+}
+
+.modal-input-error::after {
+  content: "Мы не можем отправить вас в прошлое";
+  position: absolute;
+}
+
+.modal-input-success {
+  position: relative;
+}
+
+.modal-input-success::after {
+  content: "На эти даты есть свободные номера. Пока есть.";
+  position: absolute;
+}
+
+.button-number-input{
+  position: absolute;
 }
