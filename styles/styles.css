@@ -1308,7 +1308,7 @@ body {
   width: 100%;
   grid-template-columns: 155px 133px 153px 133px;
   grid-auto-rows: minmax(50px, max-content);
-  row-gap: 40px;
+  /* row-gap: 40px; */
 }
 
 .modal-label {
@@ -1349,7 +1349,8 @@ body {
 }
 
 .date-input-wrapper {
-  position: relative;
+  display: grid;
+  /* position: relative; */
   grid-column: 2 / -1;
 }
 
@@ -1389,26 +1390,28 @@ body {
 
 .modal-input-error::after {
   content: "Мы не можем отправить вас в прошлое";
-  position: absolute;
+  /* position: absolute; */
   font-size: 16px;
   line-height: 21px;
-  bottom: -37px;
-  left: 0;
+  /* bottom: -37px;
+  left: 0; */
   color: #ff5757;
   width: 420px;
   height: 29px;
+  padding: 8px 0 31px 0;
 }
 
 .modal-input-success::after {
   content: "На эти даты есть свободные номера. Пока есть.";
-  position: absolute;
+  /* position: absolute; */
   font-size: 16px;
   line-height: 21px;
-  bottom: -37px;
-  left: 0;
+  /* bottom: -37px;
+  left: 0; */
   color: #333333;
   width: 420px;
   height: 29px;
+  padding: 8px 0 31px 0;
 }
 
 /* -+ */
