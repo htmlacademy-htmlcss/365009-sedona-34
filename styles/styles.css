@@ -41,20 +41,20 @@ img {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  width: 1200px;
-  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .site-background {
-  background-color: #f2f2f2;
   height: 100%;
+  background-color: #f2f2f2;
 }
 
 .main-container {
@@ -62,17 +62,17 @@ body {
 }
 
 .button {
-  font-family: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-family: inherit;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   background-color: #756157;
   border: none;
   border-radius: 4px;
@@ -118,12 +118,12 @@ body {
 /* header */
 
 .page-header {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   width: 1060px;
   margin: 0 auto;
   padding-left: 139px;
-  position: relative;
   z-index: 5;
 }
 
@@ -349,9 +349,10 @@ body {
   width: 235px;
 }
 
-.advantage-title-banner {
+.advantage-banner {
   position: relative;
-  padding-top: 103px;
+  padding-top: 184px;
+  justify-content: flex-start;
 }
 
 .advantage-banner-housing::before {
@@ -359,8 +360,8 @@ body {
   position: absolute;
   width: 75px;
   height: 76px;
-  top: -2px;
-  left: 49px;
+  top: 78px;
+  left: 163px;
   background-image: url("/images/advantages-images/advantage-housing.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -371,8 +372,8 @@ body {
   position: absolute;
   width: 75px;
   height: 76px;
-  top: -2px;
-  left: 49px;
+  top: 79px;
+  left: 163px;
   background-image: url("/images/advantages-images/advantage-food.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -383,8 +384,8 @@ body {
   position: absolute;
   width: 75px;
   height: 76px;
-  top: -2px;
-  left: 49px;
+  top: 79px;
+  left: 163px;
   background-image: url("/images/advantages-images/advantage-souvenirs.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1307,7 +1308,7 @@ body {
   background-color: #000000;
   transform: rotate(-45deg);
 }
-/*  */
+
 .hotel-search-form {
   display: grid;
   width: 100%;
@@ -1381,6 +1382,36 @@ body {
 .arrival-date-input,
 .departure-date-input {
   padding: 15px 40px 14px 19px;
+}
+
+.calendar-input-toggle {
+  position: absolute;
+  top: 10px;
+  right: 11px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("/images/calendar-toggle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.calendar-input-toggle:focus-visible {
+  outline: 3px solid #83b3d3;
+  opacity: 1;
+}
+
+.calendar-input-toggle:hover {
+  opacity: 0.6;
+}
+
+.calendar-input-toggle:active {
+  opacity: 0.9;
 }
 
 .adults-input,
@@ -1518,12 +1549,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-/*
-.tooltip-icon {
-  display: block;
-  width: 100%;
-  height: 100%;
-} */
 
 .tooltip-text {
   display: none;
