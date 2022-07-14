@@ -454,6 +454,7 @@ body {
 
 .newsletter-form {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   width: 800px;
 }
@@ -694,6 +695,7 @@ body {
 
 .filter-form {
   display: flex;
+  align-items: flex-start;
   width: 1060px;
   min-height: 151px;
 }
@@ -846,6 +848,7 @@ body {
   padding: 14px 40px 13px 17px;
   background-color: transparent;
   border: 2px solid #ffffff;
+  -moz-appearance: textfield;
 }
 
 .price-input-min {
@@ -948,6 +951,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   width: 160px;
+  min-height: 151px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1231,7 +1235,7 @@ body {
 
 .modal-wrapper {
   position: fixed;
-  display: none;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
@@ -1240,9 +1244,9 @@ body {
   z-index: 10;
 }
 
-.modal-active {
-  display: flex;
-  /* Добавить этот класс в div с modal-wrapper, для отображения модального окна */
+.modal-close {
+  display: none;
+  /* Добавить этот класс в div с modal-wrapper, для закрытия модального окна */
 }
 
 .modal {
@@ -1356,8 +1360,10 @@ body {
   font-weight: 700;
 }
 
-.modal-input[type="number"]::-webkit-outer-spin-button,
-.modal-input[type="number"]::-webkit-inner-spin-button {
+.adults-input::-webkit-outer-spin-button,
+.adults-input::-webkit-inner-spin-button,
+.children-input::-webkit-outer-spin-button,
+.children-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1401,6 +1407,7 @@ body {
 .children-input {
   padding: 15px 51px 14px 51px;
   text-align: center;
+  -moz-appearance: textfield;
 }
 
 .modal-input-error::after {
