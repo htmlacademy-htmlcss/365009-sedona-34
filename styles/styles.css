@@ -1182,13 +1182,13 @@ body {
 }
 
 .catalog-pagination {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 468px;
+  width: 600px;
 }
 
 .pagination-link {
@@ -1198,10 +1198,12 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  min-width: 60px;
   background-color: #82b3d3;
   text-align: center;
   border-radius: 4px;
   padding: 12px;
+  word-break: break-all;
 }
 
 .pagination-link:hover:not(.pagination-link-current) {
