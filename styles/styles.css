@@ -1183,7 +1183,7 @@ body {
 
 .catalog-pagination {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 60px);
+  grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
   gap: 8px;
   list-style-type: none;
   margin: 0;
