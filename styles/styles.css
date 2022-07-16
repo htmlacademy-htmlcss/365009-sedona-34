@@ -80,8 +80,9 @@ body {
 }
 
 .button:hover,
-.button:focus-visible {
+.button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .button:active {
@@ -93,8 +94,9 @@ body {
 }
 
 .button-second:hover,
-.button-second:focus-visible {
+.button-second:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .button-current {
@@ -102,8 +104,9 @@ body {
 }
 
 .button-current:hover,
-.button-current:focus-visible {
+.button-current:focus {
   background-color: #6c9e42;
+  outline: none;
 }
 
 .button-big {
@@ -429,14 +432,9 @@ body {
 }
 
 .hotel-search-description {
-  width: 592px;
+  width: 600px;
   margin: 0 auto;
   margin-bottom: 56px;
-}
-
-.description-second-line {
-  display: block;
-  text-indent: -15px;
 }
 
 .hotel-search-button {
@@ -488,7 +486,6 @@ body {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: rgba(0, 0, 0, 0.6);
   background-color: #f2f2f2;
   border: none;
 }
@@ -518,6 +515,7 @@ body {
 
 .site-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
 }
 
 .site-input:disabled {
@@ -566,6 +564,7 @@ body {
 .social-link:hover,
 .social-link:focus {
   color: #68a2ca;
+  outline: none;
 }
 
 .social-link:active {
@@ -585,6 +584,7 @@ body {
 .contact-phone:hover,
 .contact-phone:focus {
   color: #756157;
+  outline: none;
 }
 
 .contact-phone:active {
@@ -599,6 +599,7 @@ body {
 .academy-logo-link:hover,
 .academy-logo-link:focus {
   color: #756157;
+  outline: none;
 }
 
 .academy-logo-link:active {
@@ -760,7 +761,7 @@ body {
   opacity: 0.6;
 }
 
-.control-checkbox:focus-visible + .filter-checkbox-name::before {
+.control-checkbox:focus + .filter-checkbox-name::before {
   outline: 3px solid #83b3d3;
   opacity: 0.6;
 }
@@ -783,7 +784,7 @@ body {
   opacity: 0.6;
 }
 
-.control-radio:focus-visible + .filter-radio-name::before {
+.control-radio:focus + .filter-radio-name::before {
   outline: 3px solid #83b3d3;
   opacity: 0.6;
 }
@@ -936,7 +937,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.range-toggle:focus-visible {
+.range-toggle:focus {
   outline: 3px solid #83b3d3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -980,7 +981,7 @@ body {
   background-color: transparent;
 }
 
-.button-filter-reset:focus-visible {
+.button-filter-reset:focus {
   opacity: 1;
   outline: 3px solid #83b3d3;
   background-color: transparent;
@@ -1068,7 +1069,7 @@ body {
   border-color: #000000;
 }
 
-.circuit-button:focus-visible {
+.circuit-button:focus {
   border-color: #68a2ca;
   outline: none;
 }
@@ -1182,13 +1183,13 @@ body {
 }
 
 .catalog-pagination {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 60px);
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 468px;
+  width: 600px;
 }
 
 .pagination-link {
@@ -1198,14 +1199,18 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  min-width: 60px;
   background-color: #82b3d3;
   text-align: center;
   border-radius: 4px;
   padding: 12px;
+  word-break: break-all;
 }
 
-.pagination-link:hover:not(.pagination-link-current) {
+.pagination-link:hover:not(.pagination-link-current),
+.pagination-link:focus:not(.pagination-link-current) {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .pagination-link:active:not(.pagination-link-current) {
@@ -1282,7 +1287,7 @@ body {
   background-color: #e6e6e6;
 }
 
-.modal-close-button:focus-visible {
+.modal-close-button:focus {
   outline: 3px solid #83b3d3;
 }
 
@@ -1390,7 +1395,7 @@ body {
   border-radius: 4px;
 }
 
-.calendar-input-toggle:focus-visible {
+.calendar-input-toggle:focus {
   outline: 3px solid #83b3d3;
   opacity: 1;
 }
@@ -1483,14 +1488,14 @@ body {
   background-color: #000000;
 }
 
-.button-number-input:focus-visible {
+.button-number-input:focus {
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
-.button-number-input:focus-visible.input-button-delete::before,
-.button-number-input:focus-visible.input-button-add::before,
-.button-number-input:focus-visible.input-button-add::after {
+.button-number-input:focus.input-button-delete::before,
+.button-number-input:focus.input-button-add::before,
+.button-number-input:focus.input-button-add::after {
   background-color: #000000;
 }
 
@@ -1561,6 +1566,7 @@ body {
 .tooltip-toggle:hover,
 .tooltip-toggle:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
